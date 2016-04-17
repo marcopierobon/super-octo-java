@@ -9,11 +9,11 @@ public class Solution {
     public static void main(String[] args) {
 
       try{
-    		BufferedReader br =
-                          new BufferedReader(new InputStreamReader(System.in));
+    	BufferedReader br =
+        new BufferedReader(new InputStreamReader(System.in));
 
         int t = Integer.parseInt(br.readLine());
-		    String input;
+	String input;
         int currentSum = 0;
         for(int i = 0; i < t; i++){
             String currentNString = br.readLine();
@@ -25,13 +25,13 @@ public class Solution {
                     currentSum +=1;
                 }
             }
-			  System.out.println(currentSum);
+	System.out.println(currentSum);
         currentSum = 0;
-    		}
+    	}
 
-    	}
+      }
       catch(IOException io){
-    		io.printStackTrace();
-    	}
+        io.printStackTrace();
+      }
     }
 }
